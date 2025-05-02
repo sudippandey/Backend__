@@ -1,0 +1,35 @@
+{
+<<<<<<< HEAD
+  "name": "backend-broadways",
+  "version": "1.0.0",
+=======
+  "name": "backend-setup",
+  "version": "1.0.0",
+  "description": "",
+>>>>>>> f173186 (Initial setup for backend)
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+<<<<<<< HEAD
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sudippandey/backend-setup.git"
+  },
+  "author": "sudip",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sudippandey/backend-setup/issues"
+  },
+  "homepage": "https://github.com/sudippandey/backend-setup#readme",
+  "description": ""
+=======
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "joi": "^17.13.3",
+    "nodemon": "^3.1.10"
+  }
+>>>>>>> f173186 (Initial setup for backend)
+}
