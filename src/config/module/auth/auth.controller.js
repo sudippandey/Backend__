@@ -1,8 +1,9 @@
 // classes and their prop
 class Authcontroller {
   login = (req, res, next) => {
+    let data = req.body
     res.json({
-      data: "",
+      data: data,
       message: "login sucess",
       status: "Sucess",
       option: "",
