@@ -2,6 +2,14 @@ const bodyValidator = (schema)=>{
     return async (req,res,next)=>{
 try {
     const data = req.body;
+    if(!data){
+        next({
+            code:422,
+            message:"empty payload...",
+            status:"UNPROCESSABLE_ENTITY"
+
+        })
+    }
     await schema.validateAsync(data,{abortEarly:false})//this abortearly flag don't end the process in inital phase
     next()
 } 

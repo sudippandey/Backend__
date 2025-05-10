@@ -1,5 +1,16 @@
-# backend-setup
+// data identify
+#data 
+ecommerce features-
 
-#cloudinary
-api key :648422849421447
-api secret : mRk2nMhjeIcutmpj2NaoEYasDrE
+core features 
+-banners(web)(SQL CRUD)
+- brands
+- categories
+-users
+ - admmin , customer, seller
+ -product
+  -title, description, price , discount, category, tag , stock seller, brand
+-orders
+-orderDetails
+-transactions
+-chat

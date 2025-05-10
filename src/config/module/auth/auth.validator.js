@@ -25,7 +25,8 @@ const validator_dto = Joi.object({
     }).allow(null, '').default(null),
     role: Joi.string().pattern(/^(customer|admin|seller)$/).default('customer'),
     gender: Joi.string().pattern(/^(male|female|others)$/).optional().default(null),
-    image: Joi.string().allow(null, '').optional().default(null)
+    image: Joi.string().allow(null, '').optional().default(null),
+    dob:Joi.date().allow(null,'').optional().default(null)
 });
 
 module.exports = { validator_dto };
