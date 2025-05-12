@@ -1,14 +1,17 @@
-/* require('dotenv').config()
+require('dotenv').config();
+
 const appConfig = {
     cloudinaryCloudName: process.env.CLOUDINARY_CLOUD_NAME,
-    cloudinaryApiKey:process.env.CLOUDINARY_API_KEY,
+    cloudinaryApiKey: process.env.CLOUDINARY_API_KEY,
     cloudinaryApiSecret: process.env.CLOUDINARY_API_SECRET
 };
 
 module.exports = {
     appConfig
-} */
-const SMTPConfig ={
+};
+
+
+/* const SMTPConfig ={
     provider:process.env.SMTP_PROVIDER,
     host:process.env.SMTP_HOST,
     user :process.env.SMTP_USER,
@@ -24,4 +27,4 @@ const Dbconfig ={
 
 module.exports = {
     SMTPConfig
-}
+} */

@@ -1,5 +1,22 @@
 // classes and their prop
+const cloudinarySvc =require ('../../services/cloudinary.service')
 class Authcontroller {
+  
+  register = async (req, res, next) => {
+   try {
+    const data = req.body;
+    data.image =  await cloudinarySvc.fileUpload(req.file.path,'/user/')
+     res.json({
+      data:data ,
+      message: "register sucess",
+      status: "Sucess",
+      option: "",
+    });
+    
+   } catch (exception) {
+    next(exception)
+   }
+  };
   login = (req, res, next) => {
     let data = req.body
     res.json({
@@ -10,14 +27,7 @@ class Authcontroller {
     });
   };
 
-  register = (req, res, next) => {
-    res.json({
-      data: "",
-      message: "register sucess",
-      status: "Sucess",
-      option: "",
-    });
-  };
+  
   activate = (req, res, next) => {
     res.json({
       data: "",

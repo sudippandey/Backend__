@@ -1,7 +1,7 @@
 const express = require('express')
 const router = require('./router.config')
 const app = express()
-
+const {deleteFile} = require('../../utilities/helper')
 app.use(express.json({
     limit: "10mb",
 })); //this is used to receive data send in json format
@@ -26,11 +26,11 @@ app.use((req,res,next)=>{
             
            //file delete 
             if (req.file){
-                deletefile(req.file.path)
+                deleteFile(req.file.path)
              }
              else if(req.files) {
                  req.files.foreach((file)=>{
-                    deletefile(file.path) 
+                    deleteFile(file.path) 
                  })
              }
 

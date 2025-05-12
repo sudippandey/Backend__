@@ -1,10 +1,10 @@
 const multer = require("multer");
 const fs = require("fs");
-const { randomStringGenerator } = require("../../../utilities/helper");
+const { randomStringGenerator } = require("../../utilities/helper");
 
 const myStorage = multer.diskStorage({
   destination: (req, file, cb) => {
-    let filePath = "public/uploads";
+    let filePath = "./public/uploads";
 
     if (!fs.existsSync(filePath)) {
       fs.mkdirSync(filePath, { recursive: true });
